@@ -26,9 +26,10 @@ if (userN <= 5 && userN > 1){
   function checkpari(somma){
       return (somma % 2 == 0 ? true : false);
   }
+
   console.log(checkpari(somma));
 
-  if(scelta == checkspari(somma)){
+  if(scelta == checkpari(somma)){
     alert("Complimenti, hai vinto!");
   } else {
     alert("Mi dispiace, hai perso");
