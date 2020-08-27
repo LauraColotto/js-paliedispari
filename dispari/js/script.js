@@ -1,3 +1,6 @@
+
+var scelta = confirm("Premi OK per scegliere un numero pari\nPremi ANNULLA per scegliere un numero dispari ");
+
 // Chiedo all'utente d'inserire un numero da 1 a 5
 
 var userN = parseInt(prompt("Ciao! Inserisci un numero da 1 a 5"));
@@ -23,7 +26,14 @@ if (userN <= 5 && userN > 1){
   function checkpari(somma){
       return (somma % 2 == 0 ? true : false);
   }
-console.log(checkpari(somma));
+  console.log(checkpari(somma));
+
+  if(scelta == checkspari(somma)){
+    alert("Complimenti, hai vinto!");
+  } else {
+    alert("Mi dispiace, hai perso");
+  }
+
 } else {
   alert("Attenzione! Il numero inserito non è compreso tra 1 e 5!")
 }
